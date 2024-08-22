@@ -1,0 +1,177 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1E536E; /* Fondo general */
+    color: #333;
+}
+
+header {
+    background-color: #1A334A; /* Color de fondo del encabezado */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px
+}
+
+nav ul li a {
+    color: white; /* Color de los enlaces de navegación */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://t4.ftcdn.net/jpg/02/18/18/55/360_F_218185587_P4zituDtWJOfClUKL6merI0BgLMIxoeC.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align:center ;
+    color: rgb(0, 0, 0)
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    -webkit-text-stroke-color: #333;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    -webkit-text-stroke-color: #333;
+}
+
+.hero button {
+    background: #27E6EC; /* Fondo de los botones en la sección hero */
+    color: #1A334A; /* Color del texto de los botones en la sección hero */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.hero button:hover {
+    background: #1A334A; /* Fondo del botón en hover */
+    color: #27E6EC; /* Color del texto del botón en hover */
+}
+
+.intro, .content {
+    padding: 60px 20px;
+    text-align: center;
+    background: #5AA5CD; /* Fondo de las secciones intro y content */
+    margin-top: 20px;
+}
+
+.intro h2, .content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.intro p, .content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature {
+    background: #6F71A1; /* Fondo de los elementos de la cuadrícula */
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.step {
+    margin: 20px;
+    text-align: center;
+    max-width: 200px;
+}
+
+.step img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #1A334A; /* Fondo del pie de página */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.demo-section {
+    padding: 60px 20px;
+    background-color: #1BA3B7; /* Fondo de la sección demo */
+    margin-bottom: 40px;
+}
+
+.editor-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.editor, .code-output {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.editor h3, .code-output h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.animate-button {
+    background: #27E6EC; /* Fondo de los botones con animación */
+    color: #1A334A; /* Color del texto de los botones con animación */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.animate-button:hover {
+    transform: scale(1.1);
+    background: #1E536E; /* Fondo del botón en hover */
+}
+
+.ejemplo {
+    margin-bottom: 40px;
+}

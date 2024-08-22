@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtoFlex - Demostración Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ProtoFlex</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="how-it-works.html">¿Cómo Funciona?</a></li>
+                <li><a href="features.html">Funcionalidades</a></li>
+                <li><a href="demo.html">Demostración</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="demo-section">
+        <h2>Demostración Interactiva</h2>
+        <div class="editor-container">
+            <div class="editor">
+                <h3>Editor Visual</h3>
+                <p>Arrastra y suelta los elementos en la caja para diseñar tu página web:</p>
+                <div class="button-palette">
+                    <button draggable="true" class="drag-button" 
+                        data-code='
+/* html */
+                        
+<button class="mi-boton">Haz clic aquí</button>
+                        
+/* styles.css */
+.mi-boton {
+    background-color: #4CAF50; /* Color de fondo verde */
+    border: none; /* Sin borde */
+    color: white; /* Texto blanco */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Hacer que el botón esté en línea pero permita estilos de bloque */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Margen alrededor del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+                        
+.mi-boton:hover {
+    background-color: #45a049; /* Color de fondo verde oscuro al pasar el ratón */
+}
+                                                ' 
+                                                data-explanation="Este código representa un botón con los estilos de css">
+                                                Boton
+                    </button>
+                    <button draggable="true" class="drag-button" 
+                        data-code='
+/*html*/
+<footer class="mi-footer">
+    <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</footer>
+
+/* styles.css */
+
+/* Estilo general para el footer */
+.mi-footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto dentro del footer */
+    padding: 20px 0; /* Espaciado interno (arriba y abajo) */
+    position: relative; /* Asegura que el footer se comporte correctamente con respecto a otros elementos */
+    bottom: 0; /* Alinea el footer al fondo de la página */
+    width: 100%; /* Hace que el footer ocupe todo el ancho de la página */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera en la parte superior del footer */
+}
+
+.mi-footer p {
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.mi-footer nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+}
+
+.mi-footer nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 10px; /* Espacio entre los elementos de la lista */
+}
+
+.mi-footer nav ul li a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    transition: color 0.3s ease; /* Transición suave para el color de los enlaces */
+}
+
+.mi-footer nav ul li a:hover {
+    color: #ddd; /* Color de los enlaces al pasar el ratón */
+}
+                        ' 
+                        data-explanation="Este código genera el pie de pagina con los estilosd de css.">
+                        Footer
+                    </button>
+                    <button draggable="true" class="drag-button" 
+                        data-code='
+/*html*/
+
+<h1>Este es un título</h1>
+<p>Este es un párrafo de ejemplo en HTML. Puedes agregar más texto aquí.</p>
+
+/* styles.css */
+
+/* Estilo para el título */
+h1 {
+    color: blue; /* Cambia el color del texto a azul */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    text-align: center; /* Centra el texto */
+    font-size: 2.5em; /* Tamaño del texto */
+    margin-top: 50px; /* Espacio superior */
+}
+
+/* Estilo para el párrafo */
+p {
+    color: #333; /* Color del texto */
+    font-family: Verdana, sans-serif; /* Fuente del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    font-size: 1.2em; /* Tamaño del texto */
+    margin: 20px 15%; /* Márgenes superior e inferior y margen lateral */
+}
+                        ' 
+                        data-explanation="Este código genera un titulo y un texto que puedes cambiar lo que dice,
+junto con los codigos de css para cambiar su estilo">
+                        Texto
+                    </button>
+                    <button draggable="true" class="drag-button" 
+                        data-code='
+/*html*/
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+/* styles.css */
+
+/* Estilo para el header */
+header {
+    background-color: #333; /* Fondo del header */
+    padding: 20px 0; /* Espaciado interior */
+    color: white; /* Color del texto */
+}
+
+/* Estilo para el nav */
+nav ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0; /* Quita márgenes */
+    padding: 0; /* Quita padding */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Estilo para los elementos de la lista */
+nav ul li {
+    display: inline; /* Coloca los elementos en línea */
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+/* Estilo para los enlaces */
+nav ul li a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Cambia el color del enlace al pasar el cursor */
+nav ul li a:hover {
+    color: #ff9800; /* Cambia el color al pasar el ratón */
+}
+                        ' 
+                        data-explanation="Este código genera el encabezado de la pagina junto
+con cambios al estilo de los links con css.">
+                        Header
+                    </button>
+                </div>
+                <div id="drop-area" class="drop-area">
+                    <p>Arrastra aquí</p>
+                </div>
+            </div>
+            <div class="code-output">
+                <h3>Código Generado</h3>
+                <pre><code id="code-block">
+<!-- Aquí aparecerá el código generado -->
+                </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ProtoFlex. Todos los derechos reservados.</p>
+    </footer>
+    
+    <!-- Aquí va el código JavaScript -->
+    <script>
+        // Funcionalidad para arrastrar y soltar botones
+        const buttons = document.querySelectorAll('.drag-button');
+        const dropArea = document.getElementById('drop-area');
+        const codeBlock = document.getElementById('code-block');
+
+        buttons.forEach(button => {
+            button.addEventListener('dragstart', dragStart);
+        });
+
+        dropArea.addEventListener('dragover', dragOver);
+        dropArea.addEventListener('drop', dropButton); 
+
+        function dragStart(e) {
+            e.dataTransfer.setData('text/plain', e.target.dataset.code);
+            e.dataTransfer.setData('text/explanation', e.target.dataset.explanation);
+        }
+
+        function dragOver(e) {
+            e.preventDefault();
+        }
+
+        function dropButton(e) {
+            e.preventDefault();
+            const buttonCode = e.dataTransfer.getData('text/plain');
+            const buttonExplanation = e.dataTransfer.getData('text/explanation');
+
+            // Mostrar el código HTML del botón arrastrado en la sección de "Código Generado"
+            codeBlock.innerHTML = ''; // Limpiar cualquier contenido previo
+            const codeElement = document.createElement('pre');
+            codeElement.textContent = buttonCode;
+
+            codeBlock.appendChild(codeElement);
+
+            // Añadir una explicación de cómo funciona el código
+            const explanation = document.createElement('p');
+            explanation.textContent = buttonExplanation;
+
+            codeBlock.appendChild(explanation);
+        }
+    </script>
+</body>
+</html>
